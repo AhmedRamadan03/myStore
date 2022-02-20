@@ -1,0 +1,43 @@
+<div class="body">
+    <div class="hied">
+        <h1 class="title">DashBoard</h1>
+    </div>
+
+    <div class="container mt-5 text-center">
+        <button style="color: black;" class="border border-radius btn btn-outline-primary btn-lg btn-block" (click)="goToAdd()">AddNewItem</button>
+
+    </div>
+</div>
+
+<div class="body2 ">
+    <div class="hied2">
+      <div class="container ">
+        <div class="row">
+          <div  class="col col-sm-12 mt-5 text-center">
+            <h1 style="color: white; font-size: 35px;">Items</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div *ngFor="let item of items; index as i " class="col col-md-6 col-sm-12 mt-5">
+            <div class="card mb-3" style="max-width: 540px; background-color: #64301999;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img [src]="item.photoUrl" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">{{item.name | titlecase}}</h5>
+                    <p class="card-text">{{item.description}}</p>
+                    <p class="card-text text-muted"><input class="form-control" style="width: 200px;" type="number" placeholder="amount" [(ngModel)]="item.price"></p>
+                    <button  class="btn btn-outline-primary mr-3" (click)="save(i)" >Edit</button>
+                    <button  class="btn btn-outline-primary" (click)="delete(i)">Delete</button>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>

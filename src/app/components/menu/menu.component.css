@@ -1,0 +1,172 @@
+.body{
+    background-image: url(../../../assets/imags/cart/bradcam.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 500px;
+    position: relative;
+    top: -50px;
+    width: 100%;
+}
+.hied{
+    background-color: #0000007a;
+    height: 450px;
+}
+.title{
+    position: relative;
+    top: 250px;
+    text-align: center;
+    color: white;
+    font-size: 70px;
+}
+
+.picsum-img-wrapper img{
+    width: 100%;
+}
+
+.deal-text{
+    background-image: url(../../../assets/imags/photo/1.png);
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    padding: 18px 42px;
+    font-size: x-large;
+    font-family: 'Galada', cursive;
+}
+.slider-text h3,h1{
+    font-family: 'Galada', cursive;
+    font-size: 90px;
+    font-weight: 900;
+}
+
+
+.body2{
+    background-image: url(../../../assets/imags/home/image.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.hied2{
+    background-color: #000000ad;
+    height: 100%;
+
+}
+.cord{
+    background-color: #ddd;
+    border: none;
+       
+ }
+
+ .card-img{
+    margin: 30px 5px;
+ }
+
+.card-title {
+        margin-bottom: .75rem;
+        color: black;
+        font-weight: 900;
+        font-size: x-large
+}
+.card-text{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+.card-text small{
+    color: red;
+    font-size: x-large;
+    font-weight: 500;
+}
+
+
+.btn-outline-primary {
+    color: white;
+    border-color: #a47554;
+    transition: 1s;
+}
+.btn-outline-primary:hover{
+    background-color: #a47554;
+    transition: 1s;
+}
+
+/*
+:host ::ng-deep .carousel {
+    position: relative;
+    top: -130px;
+}
+
+:host ::ng-deep .slider_area .single_slider {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+}
+:host ::ng-deep img{
+    width: 100%;
+}
+
+.deal-text{
+    background-image: url(../../../assets/imags/photo/1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    padding: 18px 42px;
+    font-size: xx-large;
+    font-family: cursive;
+   
+    
+}
+
+:host ::ng-deep.slider-text h1{
+    font-size: 125px;
+    font-family: 'Galada', cursive;
+    font-weight: 900;
+    color:#ffd35a;
+
+}
+:host ::ng-deep.slider-text h3{
+    font-size: 90px;
+    font-weight: 900;
+}
+
+.home{
+    margin-bottom: 50px;
+}
+.home h3{
+    font-family:'Galada', cursive ;
+    font-weight: 900;
+    color: #ffd35a;
+    font-size: 30px;
+}
+.card{
+    border: none;
+   
+}
+.mb-3, .my-3 {
+    margin-bottom: 2rem!important;
+}
+
+.card-title{
+    font-size: x-large;
+    font-weight: 900;
+
+}
+.lead{
+    font-weight: 400;
+    color: darkgray;
+    font-size: large;
+
+}
+ span{
+    color: #f55e37;
+    font-size: larger;
+    font-weight: 800;
+}
+
+button{
+    border-radius: 40px;
+}
+
+
+.card-img-overlay{
+    padding: 3cm;
+}
+
+*/

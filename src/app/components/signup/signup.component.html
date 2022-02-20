@@ -1,0 +1,52 @@
+
+<div class="body ">
+  
+    <div class="container m-auto">
+        <div class="row ">
+            <div  class="col  col-sm-12 mt-5 text-center"><br><br>
+              <div class="card card2 mb-3">
+                <div class="row no-gutters">
+                  <div class="col-md-6">
+                    <img src="../../../assets/imags/signUp/logo.jpg" class="card-img" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">REGISTRATION INFO</h5>
+                      <form #f="ngForm" action="" (ngSubmit)="sigup(f)">
+                        <input ngModel #name="ngModel" name="name" class="form-control ml-5" type="text" placeholder="EnterName" required>
+                        <div *ngIf="name.invalid && name.touched" class="alert alert-danger">name is required</div>
+
+                        <input ngModel #email="ngModel" name="email" class="form-control ml-5" type="email" placeholder="Enter Your Email " required email>
+                        <div *ngIf="email.touched && email.errors?.required" class="alert alert-danger"> please enter email</div>
+                        <div *ngIf="email.touched && email.errors?.email" class="alert alert-danger"> your input can't match email format</div>
+                        <div *ngIf="errorsMessage" class="alert alert-danger">{{errorsMessage}}</div>
+
+                        <input ngModel #pass="ngModel" name="password" class="form-control ml-5" type="password" placeholder="Enter password" required minlength="8">
+                        <div *ngIf=" pass.touched && pass.errors?.required" class="alert alert-danger"> please enter password</div>
+                        <div *ngIf=" pass.touched && pass.errors?.minlength" class="alert alert-danger"> password must be 8 num</div>
+
+
+                        <input ngModel #passConfirm="ngModel" name="passwordConfirm" class="form-control ml-5" type="password" placeholder="Confirm password" required>
+                        <div *ngIf="passConfirm.touched && passConfirm.errors?.required" class="alert alert-danger"> password is not correct</div>
+                        <div *ngIf=" passConfirm.value !== pass.value &&  passConfirm.touched " class="alert alert-danger"> password is not equal</div>
+
+
+                        <input ngModel #address="ngModel" name="address" class="form-control ml-5" type="text" placeholder="Enter address" required>
+                        <div *ngIf="address.touched && address.errors?.required" class="alert alert-danger"> please enter your address</div>
+
+                        <button [disabled]="f.invalid || passConfirm.value !== pass.value"  class="btn btn-info">Register</button>
+                        
+                      </form>
+
+                      
+
+                      
+                    </div>
+                  </div>
+                  <br><br>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>

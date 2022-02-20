@@ -1,0 +1,94 @@
+
+<nav class="navbar navbar-expand-lg navbar-light ">
+  <a class="navbar-brand" routerLink=""><img src="../../../assets/imags/logo/logo.png"></a>
+  <button class="navbar-toggler" (click)="toggleNav()" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" [class.show]=isOpen id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item ">
+        <a class="nav-link " routerLinkActive="active"  routerLink='' [routerLinkActiveOptions]="{exact: true}">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a *ngIf="isAdmin && isUser" class="nav-link"  routerLinkActive="active"  routerLink='admin' >Dashboard</a>
+      </li>
+      <li class="nav-item">
+        <a *ngIf="isUser" class="nav-link"  routerLinkActive="active" routerLink='card'>Cart</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link "  routerLinkActive="active" routerLink='about'>About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link "  routerLinkActive="active" routerLink='contact'>Contact</a>
+      </li>
+      <li class="nav-item">
+        <a *ngIf="!isUser" class="nav-link "  routerLinkActive="active" routerLink='login'>Login</a>
+      </li>
+      <li class="nav-item">
+        <a *ngIf="!isUser" class="nav-link "  routerLinkActive="active" routerLink='signup'>SignUp</a>
+      </li>
+      <li class="nav-item">
+        <a *ngIf="isUser" class="btn btn-danger" (click)='logOut()'>LogOut</a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav social">
+      <li class="nav-item">
+          <a href="https://www.facebook.com/profile.php?id=100014484707215" target="_blank"  class="nav-link"> <i class='fab fa-facebook-f'></i></a>
+         </li>
+         <li class="nav-item">
+           <a href="https://twitter.com/a7medR3madan" target="_blank" class="nav-link"> <i class='fab fa-twitter'></i></a>
+          </li>
+          <li class="nav-item">
+           <a href="https://www.linkedin.com/in/ahmed-ramadan-b952021a3/" target="_blank" class="nav-link"> <i class='fab fa-linkedin-in'></i></a>
+          </li>
+          <li class="nav-item">
+           <a href="https://mail.google.com/mail/u/" target="_blank" class="nav-link"> <i class='fab fa-google-plus-g'></i></a>
+          </li>
+    </ul>
+  </div>
+</nav>
+
+
+<!--
+  <nav  class="navbar navbar-expand-lg  bg-dark">
+  <a class="navbar-brand" routerLink=''><img src="../../../assets/imags/logo/logo.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item ">
+        <a class="nav-link" routerLink=''>Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink='menu'>Menu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink='about'>About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " routerLink='contact'>Contact</a>
+      </li>
+      
+    </ul>
+  
+    
+    <ul class="navbar-nav social">
+      <li class="nav-item">
+          <a class="nav-link"> <i class='fab fa-facebook-f'></i></a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link"> <i class='fab fa-twitter'></i></a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link"> <i class='fab fa-instagram'></i></a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link"> <i class='fab fa-google-plus-g'></i></a>
+          </li>
+    </ul>
+  </div>
+</nav>
+
+-->

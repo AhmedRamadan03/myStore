@@ -1,0 +1,93 @@
+.body{
+    background-image: url(../../../assets/imags/home/bradcam3.png);
+    background-position: center center;
+    background-size: cover;
+    height: 380px;
+}
+.hied{
+    background-color: #00000052;
+    height: 380px;
+
+}
+.title{
+    position: relative;
+    top: 145px;
+    
+    text-align: center;
+    color: white;
+    font-family: cursive;
+    font-size: xxx-large;
+    font-weight: 900;
+}
+
+.contact{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.form-control{
+    padding: 20px;
+    margin-top: 20px;
+}
+.btn-outline-primary {
+    color: #a47554;
+    border-color: #a47554;
+    transition: 1s;
+}
+.btn-outline-primary:hover{
+    background-color: #a47554;
+    transition: 1s;
+    color: white;
+}
+
+.contact-info .media-body p {
+    color: #8a8a8a;
+}
+.contact-info .media-body h3 {
+    font-size: 16px;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #2a2a2a;
+}
+.media{
+    margin: 20px;
+}
+
+.contact-info__icon {
+    margin-right: 20px;
+}
+
+.info{
+    padding: 20px;
+}
+
+/*****************************************************/
+
+.footer{
+    background-image: url(../../../assets/imags/about/burger_bg_1.png);
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.social {
+    padding: 60px;
+    font-size: 35px;
+    color: #ff8482;
+}
+.social span{
+    padding: 10px;
+}
+.social span svg{
+    border-radius: 50%;
+    border: 1px dashed #ff8482;
+    width: 50px;
+    height: 50px;
+    padding: 6px;
+    transition: 1s;
+}
+
+.social span svg:hover{
+    background-color: #ff8482;
+    color: white;
+    transition: 1s;
+}

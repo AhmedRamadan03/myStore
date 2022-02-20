@@ -1,0 +1,81 @@
+/* edit Logo*/
+.navbar-brand img{
+    width: 100px;
+    border-radius: 20px;
+}
+
+/*edit nav*/
+.navbar{
+    background-color: rgba(255, 193, 7, 0.41);
+    position: fixed;
+    width: 100%;
+    z-index: 55;
+}
+
+
+.active{background-color: #f0542c; border-radius:50px;}
+.navbar-nav{
+    margin-left: 250px;
+}
+.navbar-nav li a{
+   padding: 15px;
+   color: #fff;
+   transition: 1s;
+   border-radius:50px;
+   font-size: 15px;
+
+} 
+.navbar-nav li a:hover{
+    color:white;
+    background-color: #f0542c;
+    transition: 2s;
+    border-radius:50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+.navbar {
+    z-index: 55;
+    margin: auto;
+   
+}
+
+.navbar:-webkit-scrollbar-button {
+    background-color: tomato;
+   
+}
+.navbar a {
+    
+    color: white;
+    font-size: x-large;
+}
+.navbar a:hover {
+   
+    color: tomato;
+    transition: .5s;
+}
+
+.navbar-nav{
+    position: relative;
+    left: 400px;
+}
+
+.social{
+    position: relative;
+    left: 680px;
+}
+
+.bg-dark {
+    background-color: #f0542c80!important;}
+*/
